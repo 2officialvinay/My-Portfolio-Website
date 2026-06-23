@@ -252,3 +252,128 @@
         0 0 10px rgba(127,255,212,0.4),
         0 0 20px rgba(56,189,248,0.3);
 }
+
+.skill-section{
+    width: 90%;
+    margin: 20px auto;
+
+    background-color: #1E293B;
+    color: #F8FAFC;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    min-height: 250px;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.skill-section:hover{
+    transform: scale(1.02);
+}
+
+.skill-title{
+    background-color: #1E293B;
+    padding-top: 40px;
+    font-family: 'Poppins', sans-serif;
+
+    background: linear-gradient(
+        90deg,
+        #7FFFD4,
+        #38BDF8
+    );
+
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+.skill-slogan{
+    background-color: #1E293B;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    font-size: large;
+
+    text-shadow:
+        0 0 10px rgba(127,255,212,0.4),
+        0 0 20px rgba(56,189,248,0.3);
+}
+
+.skill-cards{
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    gap: 30px;
+    background-color:  #1E293B;
+}
+
+.skill-cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.skill{
+    position: relative;
+    padding: 14px 28px;
+    background: #0F172A;
+    color: #F8FAFC;
+    border-radius: 10px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+/* Rotating Border */
+.skill::before{
+    content: "";
+    position: absolute;
+    inset: -2px;
+    border-radius: 10px;
+    background: conic-gradient(
+        from 0deg,
+        #38BDF8,
+        #7FFFD4,
+        #38BDF8
+    );
+
+    animation: rotateBorder 3s linear infinite;
+    z-index: -2;
+}
+
+/* Inner Background */
+.skill::after{
+    content: "";
+    position: absolute;
+    inset: 2px;
+    background: #0F172A;
+    border-radius: 8px;
+    z-index: -1;
+}
+
+@keyframes rotateBorder{
+    from{
+        transform: rotate(0deg);
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.skill:hover{
+    transform: translateY(-5px);
+    transition: 0.3s ease;
+
+    box-shadow:
+        0 0 10px #38BDF8,
+        0 0 20px rgba(56,189,248,0.4);
+}
