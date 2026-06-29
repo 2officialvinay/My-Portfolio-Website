@@ -6,6 +6,8 @@
     color: #F8FAFC;
 }
 
+/* Navigation Bar */
+
 .nav-bar{
     width: 90%;
     margin: 20px auto;
@@ -72,6 +74,8 @@
     justify-content: center;
   }
 }
+
+/* Short Intro */
 
 #short-intro{
     width: 90%;
@@ -236,6 +240,7 @@
   }
 }
 
+/* About Section */
 
 .about-section{
     width: 90%;
@@ -304,6 +309,8 @@
   }
 }
 
+/* Skill Section */
+
 .skill-section{
     width: 90%;
     margin: 20px auto;
@@ -360,18 +367,12 @@
 .skill-cards{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     padding-bottom: 40px;
     padding-left: 40px;
     padding-right: 40px;
     gap: 30px;
     background-color:  #1E293B;
-}
-
-.skill-cards{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 30px;
 }
 
 .skill{
@@ -428,4 +429,95 @@
     box-shadow:
         0 0 10px #38BDF8,
         0 0 20px rgba(56,189,248,0.4);
+}
+
+/* Project Section */
+
+.project-section{
+    width: 90%;
+    margin: 20px auto;
+    padding: 40px;
+    gap: 30px;
+
+    background-color: #1E293B;
+    color: #F8FAFC;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    min-height: 300px;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.project-section:hover{
+    transform: scale(1.02);
+}
+
+.project-title{
+    background-color: #1E293B;
+    font-family: 'Poppins', sans-serif;
+
+    background: linear-gradient(
+        90deg,
+        #7FFFD4,
+        #38BDF8
+    );
+
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+.project-cards{
+    margin: 20px 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio{
+    background-color: #1E293B;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.leetmatrix{
+    background-color: #1E293B;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.project-heading{
+    background-color: #1E293B;
+}
+
+.project-desc{
+    background-color: #1E293B;
+}
+
+.tech-stack{
+    background-color: #1E293B;
+}
+
+.port-project-links{
+    background-color: #1E293B;
+}
+
+.port-project-links a{
+    background-color: #1E293B;
+    text-decoration: none;
 }
