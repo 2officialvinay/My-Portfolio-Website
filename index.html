@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
     <!-- HERO SECTION -->
-    <div class="hero-section">
+    <section class="hero-section">
 
         <!-- NAVIGATION-BAR -->
         <div class="nav-bar">
@@ -34,14 +36,14 @@
             </div>
             
             <div class="right">
-                <img id="image" src="Image.jpeg" alt="My Image">
+                <img id="image" src="Portfolio_Image.jpeg" alt="My Image">
             </div>
 
         </div>
-    </div>
+    </section>
 
     <!-- About Section -->
-    <div class="about-section">
+    <section class="about-section">
         <h1 id="about-heading" >&lt; About Me /&gt;</h1>
         <h2 id="about-slogan" >Crafting Code, Building Solutions</h2>
         <p>Get to know the developer behind the screen.</p>
@@ -63,10 +65,10 @@
         </p>
 
         <p>Passionate Developer • Lifelong Learner • Problem Solver</p>
-    </div>
+    </section>
 
     <!-- Skill Section -->
-    <div class="skill-section">
+    <section class="skill-section">
     
         <h1 class="skill-title">&lt; Skills /&gt;</h1>
         <p class="skill-slogan">Technologies and tools I use to build modern web applications.</p>
@@ -95,25 +97,27 @@
 
         </div>
 
-    </div>
+    </section>
 
     <!-- Project section -->
-    <div class="project-section">
+    <section class="project-section">
 
         <h1 class="project-title">&lt; Projects /&gt;</h1>
 
         <div class="project-cards">
 
             <!-- Portfolio Card -->
-            <div class="portfolio">
+            <div class="project-card">
 
                 <h3 class="project-heading">Portfolio Website</h3>
                 <p class="project-desc">
                     A responsive personal portfolio built using HTML, CSS, and JavaScript.
                 </p>
-                <p class="tech-stack">
-                    HTML • CSS • JavaScript
-                </p>
+                <div class="tech-stack">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
                 <div class="port-project-links">
                     <a href="#">Live Demo</a>
                     <a href="#">GitHub</a>
@@ -122,15 +126,17 @@
             </div>
 
             <!-- LeetMatrix Card -->
-            <div class="leetmatrix">
+            <div class="project-card">
 
                 <h3 class="project-heading">LeetMatric Website</h3>
                 <p class="project-desc">
                     A responsive LeetMatric website built using HTML, CSS, and JavaScript.
                 </p>
-                <p class="tech-stack">
-                    HTML • CSS • JavaScript
-                </p>
+                <div class="tech-stack">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
                 <div class="port-project-links">
                     <a href="#">Live Demo</a>
                     <a href="#">GitHub</a>
@@ -140,7 +146,97 @@
 
         </div>
 
-    </div>
+    </section>
+
+    <!-- Coding Journey Section -->
+    <section class="journey-section">
+
+        <h2 class="journey-title">&lt; Coding Journey /&gt;</h2>
+
+        <div class="journey-card">
+
+            <div class="journey-item">
+                <span class="check">✔</span>
+                <span><strong>100+</strong> LeetCode Problems Solved</span>
+            </div>
+
+            <div class="journey-item">
+                <span class="check">✔</span>
+                <span><strong>100</strong> Days of Coding Consistency on LinkdIn</span>
+            </div>
+
+            <div class="journey-item">
+                <span class="check">✔</span>
+                <span>Google Chrome DevTools Certified</span>
+            </div>
+
+            <div class="journey-item">
+                <span class="check">✔</span>
+                <span>AI Skills Fest <strong>2026</strong> by <i>Microsoft</i></span>
+            </div>
+
+            <div class="journey-item">
+                <span class="check">✔</span>
+                <span>AWS Summit India <strong>2026</strong> Participant</span>
+            </div>
+
+            <div class="journey-item">
+                <span class="check">✔</span>
+                <span>Generative AI Course Completion Badge by <i>Google</i></span>
+            </div>
+
+            <div class="journey-item">
+                <span class="check">✔</span>
+                <span>Deloitte Australia - Data Analytics Job Simulation Certified</span>
+            </div>
+
+            <div class="journey-item">
+                <span class="check">✔</span>
+                <span><strong>50+</strong> Days Leetcode Badge</span>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Contact Me Section -->
+    <section class="contact-section">
+
+        <h1 class="contact-title">&lt; Contact Me /&gt;</h1>
+
+        <p class="contact-desc">
+            I'm always open to discussing new opportunities,
+            collaborations, or exciting projects.
+        </p>
+
+        <div class="contact-cards">
+
+            <a href="mailto:your@email.com" class="contact-card">
+                <i class="fa-solid fa-envelope"></i>
+                <h3>Email</h3>
+            </a>
+
+            <a href="https://github.com/yourusername"
+                target="_blank"
+                class="contact-card">
+
+                <i class="fa-brands fa-github"></i>
+                <h3>GitHub</h3>
+
+            </a>
+
+            <a href="https://linkedin.com/in/yourusername"
+                target="_blank"
+                class="contact-card">
+
+                <i class="fa-brands fa-linkedin"></i>
+                <h3>LinkedIn</h3>
+
+            </a>
+
+        </div>
+
+    </section>
 
     <script src="script.js"></script>
 </body>

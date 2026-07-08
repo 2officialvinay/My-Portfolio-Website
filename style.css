@@ -474,50 +474,376 @@
 }
 
 .project-cards{
-    margin: 20px 40px;
-
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 35px;
+    margin-top: 40px;
+    border-radius: 30px;
+    padding: 20px;
 }
 
-.portfolio{
-    background-color: #1E293B;
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+.project-card{
+    width: 360px;
+    background: #0F172A;
+    border: 1px solid rgba(56,189,248,0.25);
+    border-radius: 18px;
+    padding: 30px;
+    text-align: center;
+
+    transition: all 0.35s ease;
 }
 
-.leetmatrix{
-    background-color: #1E293B;
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+.project-card:hover{
+    transform: translateY(-10px);
+
+    border-color: #38BDF8;
+
+    box-shadow:
+        0 0 20px rgba(56,189,248,.25),
+        0 0 40px rgba(56,189,248,.15);
 }
 
 .project-heading{
-    background-color: #1E293B;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.7rem;
+    color: #F8FAFC;
+    margin-bottom: 18px;
 }
 
 .project-desc{
-    background-color: #1E293B;
+    color: #CBD5E1;
+    line-height: 1.7;
+    font-size: 1rem;
+    margin-bottom: 22px;
 }
 
 .tech-stack{
-    background-color: #1E293B;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+
+    margin-bottom: 28px;
+}
+
+.tech-stack span{
+    background: #1E293B;
+    color: #7FFFD4;
+
+    padding: 8px 14px;
+
+    border-radius: 50px;
+
+    border: 1px solid #38BDF8;
+
+    font-size: .9rem;
 }
 
 .port-project-links{
-    background-color: #1E293B;
+    display:flex;
+    justify-content:center;
+    gap:18px;
 }
 
 .port-project-links a{
-    background-color: #1E293B;
-    text-decoration: none;
+    text-decoration:none;
+    font-weight:600;
+
+    padding:12px 22px;
+
+    border-radius:10px;
+
+    transition:.3s ease;
+}
+
+.port-project-links a:first-child{
+    background:#38BDF8;
+    color:#0F172A;
+}
+
+.port-project-links a:last-child{
+    border:1px solid #38BDF8;
+    color:#38BDF8;
+}
+
+.port-project-links a:hover{
+    transform:translateY(-3px);
+
+    box-shadow:
+        0 0 15px rgba(56,189,248,.35);
+}
+
+/* Coding Journey Section */
+
+.journey-section{
+    width: 90%;
+    margin: 25px auto;
+    padding: 40px;
+
+    background: #1E293B;
+    border-radius: 18px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    transition: 0.3s ease;
+}
+
+.journey-section:hover{
+    transform: scale(1.02);
+}
+
+.journey-title{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+
+    background: linear-gradient(
+        90deg,
+        #7FFFD4,
+        #38BDF8
+    );
+
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+
+    margin-bottom: 35px;
+}
+
+.journey-card{
+    width: 100%;
+    max-width: 700px;
+
+    background: #0F172A;
+
+    border: 1px solid rgba(56,189,248,.25);
+    border-radius: 15px;
+
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.journey-item{
+    display: flex;
+    align-items: center;
+    gap: 18px;
+
+    font-size: 1.15rem;
+    color: #F8FAFC;
+
+    transition: .3s ease;
+}
+
+.journey-item:hover{
+    transform: translateX(10px);
+    color: #7FFFD4;
+}
+
+.check{
+    width: 35px;
+    height: 35px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+
+    background: rgba(56,189,248,.15);
+
+    color: #38BDF8;
+
+    font-size: 1.2rem;
+    font-weight: bold;
+
+    box-shadow: 0 0 10px rgba(56,189,248,.35);
+}
+
+.journey-item strong{
+    color: #38BDF8;
+}
+
+/* Contact Section */
+
+.contact-section{
+    width:90%;
+    margin:25px auto;
+    padding:45px;
+
+    background:#1E293B;
+    color:#F8FAFC;
+
+    border-radius:18px;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+    transition:transform .3s ease;
+}
+
+.contact-section:hover{
+    transform:scale(1.02);
+}
+
+.contact-title{
+    font-family:'Poppins',sans-serif;
+    font-size:2rem;
+
+    background:linear-gradient(
+        90deg,
+        #7FFFD4,
+        #38BDF8
+    );
+
+    background-clip:text;
+    -webkit-background-clip:text;
+
+    color:transparent;
+    -webkit-text-fill-color:transparent;
+
+    margin-bottom:25px;
+}
+
+.contact-desc{
+    width:80%;
+    text-align:center;
+
+    color:#CBD5E1;
+
+    font-size:1.1rem;
+    line-height:1.8;
+
+    margin-bottom:40px;
+    padding: 10px;
+
+    border-radius: 10px;
+    border: 2px solid rgba(13, 131, 241, 0.25);
+}
+
+.contact-cards{
+    width:100%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    flex-wrap:wrap;
+
+    gap:35px;
+
+    background:#1E293B;
+}
+
+.contact-card{
+    width:150px;
+    height:100px;
+
+    background:#0F172A;
+
+    border:1px solid rgba(56,189,248,.25);
+
+    border-radius:18px;
+
+    display:flex;
+    flex-direction:column;
+
+    justify-content:center;
+    align-items:center;
+
+    gap:22px;
+
+    text-decoration:none;
+
+    color:#F8FAFC;
+
+    transition:all .35s ease;
+
+    overflow:hidden;
+
+    position:relative;
+    z-index: 1;
+}
+
+.contact-card:hover{
+    transform:translateY(-10px);
+
+    border-color:#38BDF8;
+
+    box-shadow:
+        0 0 20px rgba(56,189,248,.35),
+        0 0 40px rgba(56,189,248,.2);
+}
+
+.contact-card i{
+    font-size:2.5rem;
+
+    color:#38BDF8;
+
+    transition:.35s ease;
+}
+
+.contact-card:hover i{
+    transform:scale(1.2)
+              rotate(8deg);
+
+    color:#7FFFD4;
+}
+
+.contact-card h3{
+    font-family:'Poppins',sans-serif;
+
+    font-size:1.1rem;
+}
+
+.contact-card::before{
+    content: "";
+    position: absolute;
+
+    width: 200%;
+    height: 200%;
+
+    background: conic-gradient(
+        transparent 0deg,
+        transparent 320deg,
+        #38BDF8 360deg
+    );
+
+    top: -50%;
+    left: -50%;
+
+    animation: rotateBorder 3s linear infinite;
+
+    z-index: -2;
+}
+
+.contact-card::after{
+    content: "";
+    position: absolute;
+
+    inset: 2px;
+
+    background: #0F172A;
+
+    border-radius: 16px;
+
+    z-index: -1;
+}
+
+@keyframes rotateBorder{
+    from{
+        transform: rotate(0deg);
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
 }
