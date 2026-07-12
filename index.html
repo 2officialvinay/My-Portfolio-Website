@@ -4,10 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
+
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Favicon -->
+     <link rel="icon" type="image/png" href="favicon.png">
 </head>
+
 <body>
     <!-- HERO SECTION -->
     <section class="hero-section">
@@ -15,10 +20,10 @@
         <!-- NAVIGATION-BAR -->
         <div class="nav-bar">
             <h1>&lt;Vinay /&gt;</h1>
-            <a href="#">About</a>
-            <a href="#">Skills</a>
-            <a href="#">Projects</a>
-            <a href="#">Contact</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contacts">Contact</a>
 
         </div>
 
@@ -43,7 +48,7 @@
     </section>
 
     <!-- About Section -->
-    <section class="about-section">
+    <section id="about" class="about-section">
         <h1 id="about-heading" >&lt; About Me /&gt;</h1>
         <h2 id="about-slogan" >Crafting Code, Building Solutions</h2>
         <p>Get to know the developer behind the screen.</p>
@@ -68,7 +73,7 @@
     </section>
 
     <!-- Skill Section -->
-    <section class="skill-section">
+    <section id="skills" class="skill-section">
     
         <h1 class="skill-title">&lt; Skills /&gt;</h1>
         <p class="skill-slogan">Technologies and tools I use to build modern web applications.</p>
@@ -100,7 +105,7 @@
     </section>
 
     <!-- Project section -->
-    <section class="project-section">
+    <section id="projects" class="project-section">
 
         <h1 class="project-title">&lt; Projects /&gt;</h1>
 
@@ -119,8 +124,8 @@
                     <span>JavaScript</span>
                 </div>
                 <div class="port-project-links">
-                    <a href="#">Live Demo</a>
-                    <a href="#">GitHub</a>
+                    <a href="#" target="_blank">Live Demo</a>
+                    <a href="https://github.com/2officialvinay/My-Portfolio-Website" target="_blank">GitHub</a>
                 </div>
 
             </div>
@@ -138,8 +143,25 @@
                     <span>JavaScript</span>
                 </div>
                 <div class="port-project-links">
-                    <a href="#">Live Demo</a>
-                    <a href="#">GitHub</a>
+                    <a href="https://leetmatrixapp.netlify.app" target="_blank">Live Demo</a>
+                    <a href="https://github.com/2officialvinay/01-LeetCodeMetric" target="_blank">GitHub</a>
+                </div>
+
+            </div>
+
+            <div class="project-card">
+
+                <h3 class="project-heading">Counter WebApp</h3>
+                <p class="project-desc">
+                    A responsive Counter webapp built using React, cssTailwind.
+                </p>
+                <div class="tech-stack">
+                    <span>React</span>
+                    <span>cssTailwind</span>
+                </div>
+                <div class="port-project-links">
+                    <a href="https://incrementanddecrementapp.netlify.app/" target="_blank">Live Demo</a>
+                    <a href="https://github.com/2officialvinay/CounterApp" target="_blank">GitHub</a>
                 </div>
 
             </div>
@@ -200,7 +222,7 @@
     </section>
 
     <!-- Contact Me Section -->
-    <section class="contact-section">
+    <section id="contacts" class="contact-section">
 
         <h1 class="contact-title">&lt; Contact Me /&gt;</h1>
 
@@ -211,12 +233,12 @@
 
         <div class="contact-cards">
 
-            <a href="mailto:your@email.com" class="contact-card">
+            <a href="mailto:2officialvinay@gmail.com" class="contact-card">
                 <i class="fa-solid fa-envelope"></i>
                 <h3>Email</h3>
             </a>
 
-            <a href="https://github.com/yourusername"
+            <a href="https://github.com/2officialvinay"
                 target="_blank"
                 class="contact-card">
 
@@ -225,7 +247,7 @@
 
             </a>
 
-            <a href="https://linkedin.com/in/yourusername"
+            <a href="https://www.linkedin.com/in/vinay-saini-1052ab380/"
                 target="_blank"
                 class="contact-card">
 
@@ -237,6 +259,25 @@
         </div>
 
     </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <p>
+            Made with <span class="heart">❤️</span> by
+            <span class="name">Vinay Saini</span>
+        </p>
+
+        <p class="copyright">
+            © 2026 All Rights Reserved.
+        </p>
+
+    </footer>
+
+    <!-- Scroll Button -->
+    <button id="scrollTopBtn" title="Go to top">
+        <i class="fa-solid fa-angles-up" id="arrow"></i>
+    </button>
 
     <script src="script.js"></script>
 </body>
